@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Quick Sort | Home</title>
+
+
+    <!-- MDB icon -->
+    <link rel="icon" href="Icons/img/mdb-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="Icons/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Icons/css/mdb.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Resources/scripts/dataFromContact.js"></script>
+</head>
+
+<body class="parallax">
+
+    <!-- Navigatie -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="Resources\Images\QuickSort_2000px-1.jpg" alt="logo" class="img-fluid"
+                style="width: 70px; height: 70px;">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"
+            style="background-color: rgb(0, 69, 71);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="Exemple.html">Exemple</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Implementare.html">Implementare</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Quiz.html">Quiz</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Jumbotron -->
+    <div class="container-fluid padding ">
+        <div class=" row  mb-0 rgba-blue-grey-strong">
+            <div class="container-fluid col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <div class="jumbotron mb-5 pt-2">
+                    <h1 class="display-3 ">Tinem legatura?</h1>
+                    <p class="lead">Daca raspunsul este <b>DA</b> atunci te rog sa-mi lasi de veste! </p>
+                    <hr class="my-2">
+                    <p>More info</p>
+
+                    <!-- Form -->
+                    <form id="contact">
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="text"
+                                        placeholder="Nume" required>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="text" id="firstName"
+                                        placeholder="Prenume" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp"
+                                placeholder="Email" required>
+                            <small id="emailHelp" class="form-text text-muted">Nu iti face griji, nu o sa te spamam
+                                cu email-uri inutile. </small>
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <textarea class="form-control" rows="5" aria-describedby="text"
+                                placeholder="Scie-ne aici parerea ta!" id="message" required></textarea>
+                        </div>
+
+
+
+
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Vrei sa te spamam cu email-uri
+                                inutile?</label>
+                        </div>
+                        <button type="submit" onclick="submitForm()" class="btn btn-black text-white">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://web.facebook.com/DonaldTrump" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="https://twitter.com/potus" target="_blank">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic"
+                            href="https://lithub.com/wp-content/uploads/2016/10/donald-trump-grow-up.jpg"
+                            target="_blank">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic" href="https://www.linkedin.com/in/donald-trump-jr-4454b862/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/trump_memes_/" target="_blank">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic" href="https://lithub.com/wp-content/uploads/2016/10/donald-trump-grow-up.jpg"
+                            target="_blank">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> QuickSort.com</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
